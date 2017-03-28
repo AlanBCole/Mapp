@@ -1,0 +1,69 @@
+<!-- basic HTML layout for google map -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Getting Directions</title>
+    <link rel="stylesheet" href="/map-2.css">
+    <script src="/map-2.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="search-div">
+
+    <h3>Getting There —|— No Car</h3>
+
+    <ul>
+      <li>
+        <input
+          class="search"
+          type="text"
+          placeholder="Where from?"
+          id="start">
+      </li>
+      <li>
+        <input type="text"
+          class="search"
+          placeholder="Where to?"
+          id="end">
+      </li>
+      <li>
+        <input
+          type="number"
+          placeholder="miles?" id="modal-distance">
+      </li>
+      <li>
+        <select id="mode">
+          <option value="WALKING">
+            walk
+          </option>
+          <option value="BICYCLING">
+            bike
+          </option>
+          <option value="TRANSIT">
+            skateboard
+          </option>
+        </select>
+      </li>
+      <li>
+        <button type="button" class="btn" name="button">
+          Get Directions
+        </button>
+      </li>
+    </ul>
+
+  </div>
+
+
+    <div id="map">
+
+    </div>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key= ">
+  </script>
+
+</body>
+</html>
